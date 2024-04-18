@@ -1,13 +1,11 @@
 package hiber.dao;
 
-import hiber.model.Car;
 import hiber.model.User;
-import hiber.service.UserService;
 
 import java.util.List;
 
 public interface UserDao {
-   void add(User user);
-   List<User> listUsers();
-   User getUserByCar(String model, int series);
+   void addUser(User user);
+   List<User> getAllUsers();
+   User findByCar(String model, int series);
 }

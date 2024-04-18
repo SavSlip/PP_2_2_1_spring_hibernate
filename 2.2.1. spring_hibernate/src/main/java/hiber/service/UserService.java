@@ -5,7 +5,7 @@ import hiber.model.User;
 import java.util.List;
 
 public interface UserService {
-    void add(User user);
-    List<User> listUsers();
-    User getUserByCar(String model, int series);
+    void addUser(User user);
+    List<User> getAllUsers();
+    User findByCar(String model, int series);
 }
